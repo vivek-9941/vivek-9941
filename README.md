@@ -7,6 +7,7 @@
 ###
 
 <h2 align="left">About me</h2>
+![](https://github.com/NuroDev/NuroDev/blob/6f0d0a8cff5c44aea2d4f24d949f692ee54002de/bar.gif)
 
 ###
 
