@@ -7,8 +7,8 @@
 ###
 
 <h2 align="left">About me</h2>
-![](https://github.com/NuroDev/NuroDev/blob/6f0d0a8cff5c44aea2d4f24d949f692ee54002de/bar.gif)
 
+![](https://github.com/NuroDev/NuroDev/blob/6f0d0a8cff5c44aea2d4f24d949f692ee54002de/bar.gif)
 ###
 
 <p align="left">✨ Creating Secure and Robust Backend.<br>📚 I'm currently learning Web  Development<br>🏊‍♂️ A dedicated swimmer with a love for the water.</p>
