@@ -12,7 +12,7 @@
 
 ###
 
-<p align="left">✨ Creating Secure and Robust Backend.<br>📚 I'm currently learning Web  Development<br>🏊‍♂️ A dedicated swimmer with a love for the water.</p>
+<p align="left">✨ Creating Secure and Robust Backend.<br>📚 FullStack Developer<br>Swimmer | Sprinter</p>
 
 ###
 
