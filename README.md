@@ -7,8 +7,9 @@
 ###
 
 <h2 align="left">About me</h2>
+<img src="https://readme-typing-svg.demolab.com?size=26&duration=2500&pause=800&center=true&vCenter=true&width=600&lines=Backend+Engineer;Java+%7C+Spring+Boot;Clean+Architecture" alt="Typing SVG" />
 
-<img src="https://github.com/NuroDev/NuroDev/blob/6f0d0a8cff5c44aea2d4f24d949f692ee54002de/bar.gif" width="1000" height="7">
+
 
 ###
 
