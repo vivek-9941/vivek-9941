@@ -4,7 +4,7 @@
 <img src="https://readme-typing-svg.demolab.com?size=26&duration=2500&pause=800&center=true&vCenter=true&width=600&lines=Backend+Engineer;Java+%7C+Spring+Boot;Clean+Architecture" alt="Typing SVG" />
 
 
-- 🌱 I’m currently learning **Machine Learning, Messaging Queues**
+- 🌱 I’m currently learning **Cloud Computing**
 
 - 💬 Ask me about **Java , Spring Boot , Microservices , Multithreading , Spring Security, Spring Data JPA**
 
