@@ -3,8 +3,13 @@
 <p align="center">
 <img src="https://readme-typing-svg.demolab.com?size=26&duration=2500&pause=800&center=true&vCenter=true&width=600&lines=Backend+Engineer;Java+%7C+Spring+Boot;Clean+Architecture" alt="Typing SVG" />
 
-
-- 🌱 I’m currently learning **Kubernetes,Grafana,**
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+- 🌱 I’m currently learning **Kubernetes,Grafana**
 
 - 💬 Ask me about **Java , Spring Boot , Microservices , Multithreading , Spring Security, Spring Data JPA**
 
