@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Kubernetes,Grafana**
 
-- 💬 Ask me about **Java , Spring Boot , Microservices , Multithreading , Spring Security, Spring Data JPA**
+- 💬 Ask me about **Apache Kafka , Distributed Systems , Java , Spring Boot , Microservices , Multithreaded development , Spring Security**
 
 - 📫 How to reach me **vivekmane9860@gmail.com**
 
