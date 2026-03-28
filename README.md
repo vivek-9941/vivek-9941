@@ -36,6 +36,11 @@
   <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="50" height="50" style="margin:10px;"/>
   <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwindcss" width="50" height="50" style="margin:10px;"/>
 </p>
-
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=vivek-9941&theme=tokyonight&hide_border=true" height="170"/>
+</p>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=vivek-9941&theme=tokyo-night&hide_border=true" />
+</p>
 </p>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=vivek-9941&label=Profile%20views&color=0e75b6&style=flat" alt="vivek-9941" /> </p>
