@@ -1,0 +1,48 @@
+name: Metrics embed
+
+on:
+  # Run every day at midnight UTC
+  schedule:
+    - cron: "0 0 * * *"
+  # Allow manual triggering
+  workflow_dispatch:
+  # Run on every push to main
+  push:
+    branches:
+      - main
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Metrics embed
+        uses: lowlighter/metrics@v3.34
+        with:
+          # Your GitHub token (stored as a repository secret)
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # Output file — will be committed to your repo
+          filename: assets/metrics.svg
+
+          # GitHub username
+          user: vivek-9941
+
+          # Base sections to include
+          base: header, activity, community, repositories, metadata
+
+          # Additional plugins
+          plugin_languages: yes
+          plugin_languages_analyzed_by: linguist
+          plugin_languages_sections: most-used
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
