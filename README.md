@@ -44,3 +44,7 @@
 </p>
 </p>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=vivek-9941&label=Profile%20views&color=0e75b6&style=flat" alt="vivek-9941" /> </p>
+
+<p align="center">
+  <img src="assets/metrics.svg" alt="Metrics" />
+</p>
