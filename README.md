@@ -42,34 +42,6 @@ My focus areas:
 **The Core Problem:**
 A trade is not a single operation. Before execution, it must pass risk validation, margin checks, and compliance rules — all **in parallel**, **within strict latency bounds**, and with **consistency under failure**.
 
-```
-[ Order Received ]
-       │
-       ▼
-┌─────────────────────────────────────────────┐
-│           Pre-Trade (Sync, gRPC)            │
-│  Risk Check ──┬── Margin Check ──┬── KYC   │
-│               └──── Compliance ──┘          │
-└──────────────────────┬──────────────────────┘
-                       │ All pass?
-                       ▼
-┌─────────────────────────────────────────────┐
-│       Orchestration Layer (DAG Engine)      │
-│   CompletableFuture.allOf() + Retry/CB      │
-└──────────────────────┬──────────────────────┘
-                       │
-                       ▼
-┌─────────────────────────────────────────────┐
-│         In-Memory Matching Engine           │
-│    Price-time priority + Partial fills      │
-└──────────────────────┬──────────────────────┘
-                       │
-                       ▼
-┌─────────────────────────────────────────────┐
-│      Post-Trade (Async, Kafka)              │
-│  Ledger ─── Notifications ─── Analytics    │
-└─────────────────────────────────────────────┘
-```
 
 | Engineering Concern | Implementation |
 |---|---|
@@ -87,29 +59,6 @@ A trade is not a single operation. Before execution, it must pass risk validatio
 #### *DAG-Based Orchestration Inspired by Apache Airflow & Netflix Conductor*
 
 > Workflows are **not hardcoded pipelines** — they are defined as DAGs and executed dynamically across a distributed worker pool.
-
-```
-  [ Workflow Definition (DAG) ]
-           │
-     ┌─────▼─────┐
-     │  Scheduler │  ← Topological dependency resolution
-     └─────┬─────┘
-           │
-    ┌──────▼──────┐
-    │  Kafka Bus  │  ← Decouples orchestration from execution
-    └──────┬──────┘
-           │
-  ┌────────▼────────┐
-  │  Worker Pool    │  ← Horizontally scalable via K8s HPA
-  │ (Consumer Lag)  │
-  └────────┬────────┘
-           │ Task fails?
-    ┌──────▼──────┐
-    │  Retry →    │
-    │  DLQ →      │  ← Self-healing fallback chain
-    │  Alert      │
-    └─────────────┘
-```
 
 | Engineering Depth | Detail |
 |---|---|
@@ -201,23 +150,7 @@ A trade is not a single operation. Before execution, it must pass risk validatio
 
 </div>
 
----
 
-## 🧩 Engineering Principles
-
-```
-  Design for failure, not success
-  ─────────────────────────────────────────────────────────
-  Decouple everything that can scale independently
-  ─────────────────────────────────────────────────────────
-  Prefer async over blocking when correctness allows
-  ─────────────────────────────────────────────────────────
-  Make state transitions explicit and traceable
-  ─────────────────────────────────────────────────────────
-  Measure everything — latency, retries, failures
-```
-
----
 
 ## 📈 GitHub Activity
 
